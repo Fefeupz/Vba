@@ -1,0 +1,15 @@
+Public Function ValorParcela(ByRef valor_total As Double, ByRef num_parcelas As Integer, ByRef juros_simples As Double) As Double
+    
+    Dim jurosDecimais As Double
+    Dim valorComJurosSimples As Double
+    Dim parcelamento As Double
+    Dim formataCasasDecimas As Double
+    
+    jurosDecimais = juros_simples / 100
+    valorComJurosSimples = valor_total * jurosDecimais
+    parcelamento = (valor_total + valorComJurosSimples) / num_parcelas
+    formataCasasDecimas = Format(parcelamento, "#,##0.00")
+    
+    ValorParcela = formataCasasDecimas
+    
+End Function
