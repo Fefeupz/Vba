@@ -1,3 +1,5 @@
+#Função com 3 argumentos para calcular a parcela de um valor, onde o primeiro argumento recebe o valor total, o segundo número de parcelas e o terceiro a taxa de juros simples.
+
 Public Function ValorParcela(ByRef valor_total As Double, ByRef num_parcelas As Integer, ByRef juros_simples As Double) As Double
     
     Dim jurosDecimais As Double
